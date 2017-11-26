@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default () => (
   <div>
-    Hello World.
-    <Link href="about"><a>To about pabe</a></Link>
+    <h1>Ghibli</h1>
+    <Link href="/films"><a>To films</a></Link>
   </div>
 )
