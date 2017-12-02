@@ -1,8 +1,9 @@
 import Link from 'next/link'
+import Page from './layouts/default'
 
 export default () => (
-  <div>
+  <Page>
     <h1>Ghibli</h1>
     <Link href="/films"><a>To films</a></Link>
-  </div>
+  </Page>
 )

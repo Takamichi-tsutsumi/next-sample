@@ -1,4 +1,5 @@
 import React from 'react'
+import Page from './layouts/default'
 import withRedux from 'next-redux-wrapper'
 import Link from 'next/link'
 import fetch from 'isomorphic-fetch'
@@ -13,20 +14,21 @@ class FilmsContainer extends React.Component {
   }
 
   render() {
-    return ( 
-      <div>
+    return (
+      <Page>
+        <h1>Ghibli Films List</h1>
         <ul>
           {this.props.films.data.map(film => <li key={film.id}>{film.title}</li>)}
         </ul>
         <Link href="/">
           <a>Home</a>
         </Link>
-      </div> 
+      </Page>
     )
   }
 }
 
-FilmsContainer = withRedux(makeStore, 
+FilmsContainer = withRedux(makeStore,
   (state) => ({ films: state.films }),
 )(FilmsContainer);
 
