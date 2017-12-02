@@ -14,10 +14,12 @@
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
     "react-redux": "^5.0.6",
-    "redux": "^3.7.2"
+    "redux": "^3.7.2",
+    "styled-jsx": "^2.2.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.6",
+    "babel-loader": "^7.1.2",
     "node-sass": "^4.7.2",
     "postcss-easy-import": "^3.0.0",
     "postcss-loader": "^2.0.9",
